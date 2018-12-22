@@ -1,3 +1,4 @@
-module.exports = function(a, b) {
-  return a + b
+// ES6 语法
+export default(a, b) => {
+  return a + b;
 }

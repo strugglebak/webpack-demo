@@ -67,20 +67,34 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var sum = __webpack_require__(1);
-var result = sum(1, 2);
-alert(`1 + 2 = ${result}`);
+"use strict";
 
 
+var _sum = __webpack_require__(1);
+
+var _sum2 = _interopRequireDefault(_sum);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var result = (0, _sum2.default)(1, 2); // ES6 语法
+
+alert('1 + 2 = ' + result);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = function(a, b) {
-  return a + b
-}
+"use strict";
 
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+// ES6 语法
+exports.default = function (a, b) {
+  return a + b;
+};
 
 /***/ })
 /******/ ]);
